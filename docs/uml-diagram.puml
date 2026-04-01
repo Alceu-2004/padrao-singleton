@@ -1,0 +1,16 @@
+@startuml
+
+' Classe principal (Singleton)
+class GameManager <<Singleton>>
+
+' Enum de estados do jogo
+enum GameState
+
+' Classe cliente (simulação)
+class GameSimulator
+
+' Relações
+GameManager ..> GameState
+GameSimulator ..> GameManager
+
+@enduml
